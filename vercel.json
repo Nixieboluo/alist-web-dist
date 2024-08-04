@@ -1,0 +1,10 @@
+{
+	"buildCommand": "cd dist && sed -i 's/api: undefined,/api: \"https:\\/\\/files.losenone.cn\\/\",/g' index.html && echo \"This is custom AList build for The Miracle Box\"",
+	"outputDirectory": "./dist",
+	"rewrites": [
+		{
+			"source": "(^/(?!assets/|images/|static/|streamer/).*)",
+			"destination": "/index.html"
+		}
+	]
+}
